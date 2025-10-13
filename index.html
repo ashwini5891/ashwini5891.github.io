@@ -1,21 +1,85 @@
-<section id="about" style="margin-top: 2rem;">
-    <h2>About Me</h2>
-    <p>Hi, I’m <strong>Ashwini</strong>, a <strong>Product Manager</strong> passionate about building products that solve real user problems and drive measurable business outcomes.</p>
-    
-    <p>I believe great product management starts with <strong>deep empathy for users</strong>, understanding their pain points and translating those insights into impactful solutions. I rely on both <strong>qualitative and quantitative data</strong> to inform decisions, ensuring every product choice is grounded in evidence, not assumptions.</p>
-    
-    <p>My approach is highly <strong>experimental</strong>: I validate hypotheses early, test frequently, and learn fast. Whether at the 0→1 stage or scaling established products, I treat every initiative like a startup, balancing vision, validation, and delivery discipline.</p>
-    
-    <p>Before moving into product management, I worked as a <strong>software engineer</strong>. I still love to build — whether using <strong>no-code</strong> and <strong>low-code tools</strong> or experimenting with <strong>AI-assisted IDEs</strong> like Windsurf. This hands-on mindset helps me stay close to the technical craft and collaborate effectively with engineers.</p>
-    
-    <p><strong>Favourite products and tools</strong></p>
-    <ul>
-      <li><strong>Design & Productivity:</strong> Canva, Notion, Figma, Obsidian</li>
-      <li><strong>Developer Tools:</strong> Git, Docker, VS Code, Windsurf</li>
-      <li><strong>AI & Automation:</strong> Claude, ChatGPT, Replit, Cursor, Midjourney</li>
-      <li><strong>Collaboration & Workflow:</strong> Linear, Slack, Loom, Miro</li>
-    </ul>
-  
-    <p>I continuously learn from product thinkers and leaders such as <strong>Leah Tharin</strong>, <strong>Elena Verna</strong>, <strong>Shreyas Doshi</strong>, <strong>Melissa Perri</strong>, <strong>Teresa Torres</strong>, <strong>Rob Snyder</strong>, and <strong>Eric Ries</strong>, whose insights shape how I approach discovery, growth, and product strategy.</p>
-  </section>
-  
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ashwini — Product Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-slate-900 antialiased font-sans">
+  <!-- Header -->
+  <header class="border-b border-slate-200">
+    <nav class="max-w-3xl mx-auto px-4 py-4 flex justify-between items-center text-sm">
+      <div class="font-semibold">Ashwini</div>
+      <div class="space-x-4">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/projects.html" class="hover:underline">Projects</a>
+        <a href="/contact.html" class="hover:underline">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <!-- Hero -->
+    <section class="text-center mb-10">
+      <img src="/assets/images/headshot.jpg" alt="Ashwini headshot"
+           class="w-28 h-28 mx-auto rounded-full border border-slate-300 mb-4">
+      <h1 class="text-3xl font-bold">Ashwini Laxminarayana</h1>
+      <p class="text-slate-700 mt-2">Senior Product Manager based in London</p>
+      <p class="mt-4">
+        <a href="/assets/Ashwini-CV.pdf"
+           class="inline-block px-4 py-2 border border-slate-300 rounded-lg text-sm hover:bg-slate-50">
+          Download CV
+        </a>
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="space-y-5 text-slate-800">
+      <h2 class="text-xl font-semibold">About Me</h2>
+
+      <p>Hi, I’m <strong>Ashwini</strong>, a <strong>Product Manager</strong> focused on solving real user problems and driving measurable business outcomes.</p>
+
+      <p>I believe great product management starts with <strong>deep empathy for users</strong>, understanding their pain points and translating insights into solutions. I use both <strong>qualitative and quantitative data</strong> to inform decisions.</p>
+
+      <p>My approach is <strong>experimental</strong>: I validate hypotheses early, test frequently, and learn fast. Whether at the 0→1 stage or scaling established products, I treat each initiative like a startup, balancing vision, validation, and delivery discipline.</p>
+
+      <p>Before moving into product management, I worked as a <strong>software engineer</strong>. I still like to build using <strong>no-code</strong> and <strong>low-code</strong> tools, and I experiment with <strong>AI-assisted IDEs</strong> such as Windsurf.</p>
+
+      <div>
+        <p class="font-semibold">Favourite products and tools</p>
+        <ul class="list-disc list-inside mt-2 space-y-1">
+          <li><strong>Design and productivity:</strong> Canva, Notion, Figma, Obsidian</li>
+          <li><strong>Developer tools:</strong> Git, Docker, VS Code, Windsurf</li>
+          <li><strong>AI and automation:</strong> Claude, ChatGPT, Cursor, Replit</li>
+          <li><strong>Collaboration and workflow:</strong> Linear, Slack, Loom, Miro</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold">Leaders I learn from</p>
+        <ul class="list-disc list-inside mt-2 space-y-1">
+          <li>Leah Tharin</li>
+          <li>Elena Verna</li>
+          <li>Shreyas Doshi</li>
+          <li>Melissa Perri</li>
+          <li>Teresa Torres</li>
+          <li>Rob Snyder</li>
+          <li>Eric Ries</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 mt-16 py-6 text-center text-sm text-slate-600">
+    © <span id="year">2025</span> Ashwini
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
