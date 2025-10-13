@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashwini — Product Manager</title>
+  <meta name="description" content="Product Manager portfolio and projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .container-narrow { max-width: 900px; }
+  </style>
+</head>
+<body class="bg-white text-slate-900 antialiased" style="font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-slate-200">
+    <div class="mx-auto container-narrow px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="font-semibold">Ashwini</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+      <a href="#resume" class="md:inline-flex hidden px-3 py-1.5 rounded-lg border border-slate-300 hover:bg-slate-50 text-sm">View CV</a>
+      <button class="md:hidden inline-flex items-center justify-center p-2 rounded hover:bg-slate-100" aria-label="Open Menu" onclick="document.getElementById('mnav').classList.toggle('hidden')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+    <div id="mnav" class="md:hidden hidden border-t border-slate-200">
+      <div class="mx-auto container-narrow px-4 py-2 flex flex-col gap-2 text-sm">
+        <a href="#about" class="py-2">About</a>
+        <a href="#projects" class="py-2">Projects</a>
+        <a href="#contact" class="py-2">Contact</a>
+        <a href="#resume" class="py-2">View CV</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="mx-auto container-narrow px-4">
+    <section class="pt-16 md:pt-24 pb-10 md:pb-14">
+      <p class="text-sm tracking-wide uppercase text-slate-500">Product Manager based in London</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mt-3">Ashwini Laxminarayana</h1>
+      <p class="mt-5 text-slate-700 max-w-2xl">Senior Product Manager specialising in fintech, post‑trade automation, and AI‑powered SaaS. I build 0‑to‑1 products, streamline complex workflows, and partner with engineering to ship reliable platforms at pace.</p>
+      <div class="mt-6 flex gap-3">
+        <a id="resume" href="/assets/Ashwini-CV.pdf" class="px-4 py-2 rounded-lg bg-slate-900 text-white text-sm hover:bg-slate-800">Download CV</a>
+        <a href="#projects" class="px-4 py-2 rounded-lg border border-slate-300 text-sm hover:bg-slate-50">View projects</a>
+        <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener" class="px-4 py-2 rounded-lg border border-slate-300 text-sm hover:bg-slate-50">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-12 border-t border-slate-200">
+      <h2 class="text-2xl font-bold">About</h2>
+      <p class="mt-4 text-slate-700 leading-7">I’m a Senior Product Manager with experience across post‑trade lifecycle platforms, API products, and AI‑assisted workflows. I’ve led discovery, strategy, and delivery across startups and enterprises, shipping capabilities like automated lifecycle events, data lakes powering analytics and reporting, and API‑first integrations. I care about measurable outcomes and reliable delivery.</p>
+      <ul class="mt-6 grid md:grid-cols-2 gap-3 text-slate-700">
+        <li>• Tokenovate — API‑driven post‑trade platform</li>
+        <li>• Veridiya — TreasuryTrove finance SaaS</li>
+        <li>• Kigen — eSIM / IoT provisioning</li>
+        <li>• Aviva — Insurance digital products</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-12 border-t border-slate-200">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold">Projects</h2>
+        <a href="#contact" class="text-sm underline">Work with me</a>
+      </div>
+      <div class="mt-6 grid sm:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <article class="border border-slate-200 rounded-2xl p-5 hover:shadow-sm transition">
+          <h3 class="font-semibold">Post‑trade Lifecycle Automation</h3>
+          <p class="mt-2 text-sm text-slate-700">Designed lifecycle workflows and APIs for complex financial instruments, enabling automated events and compliance reporting.</p>
+          <a href="#" class="mt-3 inline-block text-sm underline">Read more</a>
+        </article>
+        <!-- Card 2 -->
+        <article class="border border-slate-200 rounded-2xl p-5 hover:shadow-sm transition">
+          <h3 class="font-semibold">AI‑assisted KYC</h3>
+          <p class="mt-2 text-sm text-slate-700">Prototype for automated document verification, risk scoring, and anomaly detection to improve onboarding and compliance.</p>
+          <a href="#" class="mt-3 inline-block text-sm underline">Read more</a>
+        </article>
+        <!-- Card 3 -->
+        <article class="border border-slate-200 rounded-2xl p-5 hover:shadow-sm transition">
+          <h3 class="font-semibold">TreasuryTrove</h3>
+          <p class="mt-2 text-sm text-slate-700">Finance SaaS for PTAs and small treasurers. Open banking automation and simple ERP features.</p>
+          <a href="#" class="mt-3 inline-block text-sm underline">Read more</a>
+        </article>
+        <!-- Card 4 -->
+        <article class="border border-slate-200 rounded-2xl p-5 hover:shadow-sm transition">
+          <h3 class="font-semibold">Data Lake & Analytics</h3>
+          <p class="mt-2 text-sm text-slate-700">Trade data lake with anomaly detection and regulatory dashboards; improved data quality and auditability.</p>
+          <a href="#" class="mt-3 inline-block text-sm underline">Read more</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 border-t border-slate-200">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="mt-4 text-slate-700">Open to product roles and advisory. For fastest response, email <a href="mailto:ashwini@example.com" class="underline">ashwini@example.com</a>.</p>
+      <form class="mt-6 grid gap-3 max-w-xl" onsubmit="event.preventDefault(); alert('Thanks! I will get back to you.');">
+        <input type="text" placeholder="Your name" class="w-full rounded-xl border border-slate-300 px-4 py-2" required>
+        <input type="email" placeholder="Your email" class="w-full rounded-xl border border-slate-300 px-4 py-2" required>
+        <textarea placeholder="Message" rows="4" class="w-full rounded-xl border border-slate-300 px-4 py-2" required></textarea>
+        <button type="submit" class="w-full md:w-auto px-4 py-2 rounded-xl bg-slate-900 text-white text-sm hover:bg-slate-800">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-200 text-sm text-slate-600">
+      <p>© <span id="year"></span> Ashwini. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
