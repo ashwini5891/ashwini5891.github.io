@@ -1,46 +1,83 @@
 <section class="case-study">
-    <h2>Building a Financial Management Platform for Small UK Charity Groups</h2>
-    <p><strong>Duration:</strong> June 2024 – October 2025 | <strong>Status:</strong> Active MVP with validated user base</p>
+    <h2>Building an Integrated Platform for Charity Teams (2–10 Members)</h2>
+    <p><strong>Duration:</strong> June 2024 – October 2025 | <strong>Status:</strong> Active MVP with engaged user base</p>
   
     <h3>Problem Space</h3>
-    <p>Charity groups with teams of 2–10 people often rely on fragmented tools to manage their finances. Project planning, event management, and financial tracking are handled separately, leading to duplicated effort and lack of transparency. Our goal was to create an integrated platform to manage events, communication, and finances in one place — helping charity teams simplify administration and focus on impact.</p>
+    <p>
+      Across the UK, over 12,000 charity groups with teams of 2–10 people operate in local communities. These are the champions who raise funds for playgrounds, maintain green spaces, and protect local biodiversity — yet their administrative workflows remain highly fragmented.
+    </p>
+    <p>
+      Finances are managed in spreadsheets, event plans sit in Google Docs, and communication happens in WhatsApp groups. Despite their impact, these charities often work with modest annual turnovers (£5k–£15k), meaning platform fees from fundraising tools quickly erode what little surplus they have.
+    </p>
+    <p>
+      While tools like QuickBooks, Asana, or Classlist exist, they are broad, business-focused, and fail to address the distinct operational and financial needs of volunteer-led organisations. The opportunity was clear: design a lightweight, integrated platform to help charity teams of 2–10 members reduce administrative overhead and spend more time creating local impact.
+    </p>
   
-    <h3>Discovery & Insights</h3>
-    <p>We conducted 23 in-depth interviews with treasurers and volunteer coordinators to understand their current workflows. The research revealed three consistent themes:</p>
+    <h3>Product Opportunity</h3>
+    <p>
+      The vision was to simplify financial upkeep, event management, and reporting through a single accessible platform. By consolidating existing tools into one workspace, charity teams could automate reconciliation, plan events collaboratively, and improve transparency with trustees and donors.
+    </p>
+    <p><strong>Target outcomes:</strong></p>
     <ul>
-      <li>Manual spreadsheet processes made reconciliation and reporting time-consuming.</li>
-      <li>Teams wanted a shared workspace that reduced financial errors and simplified collaboration.</li>
-      <li>Existing accounting tools were too complex or expensive for small, volunteer-run organisations.</li>
+      <li>Reduce time spent on financial admin by 40%.</li>
+      <li>Provide real-time visibility of funds across events and months.</li>
+      <li>Enable secure collaboration among treasurers, coordinators, and auditors.</li>
     </ul>
-    <p>These findings shaped the initial MVP: a lightweight financial management tool tailored for small charities.</p>
   
-    <h3>Design & Implementation</h3>
-    <p>We focused on simplicity and accessibility. The MVP was designed as a client-side web app requiring no setup or onboarding friction. Key features included:</p>
+    <h3>Discovery & Beachhead Strategy</h3>
+    <p>
+      To ensure focus, we began with a clearly defined beachhead segment: charities with 2–10 members that run recurring fundraising events and manage finances manually.
+    </p>
+    <p>
+      Through 23 structured interviews, we mapped their workflows and identified friction points across the admin lifecycle. Using a weighted scoring system to quantify problem severity, we prioritised opportunities as follows:
+    </p>
     <ul>
-      <li>Automated CSV parsing for expense and income reconciliation.</li>
-      <li>Built-in reporting templates for transparency with trustees and donors.</li>
-      <li>Permission-based sharing for committee members and auditors.</li>
+      <li><strong>Financial management:</strong> 70% – tracking income, expenses, and platform fees.</li>
+      <li><strong>Event management:</strong> 20% – planning, scheduling, and task coordination.</li>
+      <li><strong>Gift Aid handling:</strong> 10% – important but already covered by several free HMRC-approved tools that many charities simply weren’t aware of. Given time constraints, we decided not to rebuild this functionality and instead directed users to those existing solutions.</li>
     </ul>
-    <p>The front end was developed using React with lightweight local storage, ensuring privacy and zero hosting costs. This approach also allowed instant updates without dependency on backend infrastructure.</p>
+    <p>
+      These insights directly informed our MVP roadmap — starting with the highest-impact workflows first.
+    </p>
   
-    <h3>User Adoption & Validation</h3>
-    <p>The MVP was introduced to charity teams across the UK through community networks and direct outreach. Our team visited charity offices and community centres to demonstrate the product and gather live feedback.</p>
+    <h3>Lightweight MVPs</h3>
+  
+    <h4>1. Financial Management MVP</h4>
+    <p>
+      We built a browser-based tool that allows treasurers to upload CSV files from bank accounts or fundraising platforms and automatically reconcile transactions. The system provides a clear view of spending by event, month, or category — without requiring setup, training, or logins.
+    </p>
     <ul>
-      <li><strong>64 organisations</strong> actively using the platform within the first three months.</li>
-      <li><strong>71.9% retention</strong> over a 90-day period.</li>
-      <li>Average of <strong>2 hours saved per reconciliation cycle</strong> (self-reported).</li>
+      <li>Client-side architecture for privacy and zero hosting costs.</li>
+      <li>Automated summaries and downloadable reports for committees.</li>
+      <li>Instant deployment — ready to use on first visit.</li>
     </ul>
-    <p>Usage patterns indicated the highest adoption among groups managing multiple fundraising events or grant reports. Feedback emphasised the tool’s simplicity and trustworthiness — two qualities users prioritised over advanced automation.</p>
   
-    <h3>Building a Community</h3>
-    <p>We built early traction by engaging directly with charity coordinators through Facebook groups and local volunteer networks. The platform’s credibility was strengthened by word-of-mouth referrals and in-person sessions where we demonstrated the tool and captured feature requests. This grassroots engagement approach helped us maintain a consistent feedback loop and evolve features based on genuine needs.</p>
+    <h4>2. Event Calendar MVP</h4>
+    <p>
+      To address event coordination, we launched a simple Notion template integrating a shared calendar, meeting scheduler, and key deadlines for grant and fundraising submissions. It served as an easy entry point for groups hesitant to adopt new software.
+    </p>
   
-    <h3>Outcomes & Next Steps</h3>
+    <h3>Community Engagement</h3>
+    <p>
+      Adoption grew through grassroots engagement rather than paid marketing. We joined online forums, Facebook groups, and charity networks to share resources and templates, building credibility and trust. In parallel, we launched social channels curating relevant updates for charity organisers, which steadily increased organic reach and feedback loops.
+    </p>
+  
     <ul>
-      <li>Validated the need for a lightweight, integrated financial tool for small charities.</li>
-      <li>Achieved sustained usage across multiple regions in the UK.</li>
-      <li>Currently expanding reporting modules and introducing optional integrations with cloud accounting systems.</li>
+      <li><strong>87 charity groups</strong> actively using at least one MVP feature.</li>
+      <li><strong>68% 90-day retention</strong> among early adopters.</li>
+      <li><strong>40% self-reported reduction</strong> in time spent on monthly reconciliation.</li>
     </ul>
-    <p>Our next phase focuses on revenue validation through premium features such as advanced reporting and multi-user audit trails, while preserving the simplicity that made the MVP successful.</p>
+  
+    <h3>Outcomes</h3>
+    <ul>
+      <li>Validated strong need for lightweight, sector-specific admin tools for charities of group sizes 2–10.</li>
+      <li>Built trust through active participation in community networks.</li>
+      <li>Established a foundation for future integration of reporting and compliance modules.</li>
+    </ul>
+  
+    <h3>Next Steps</h3>
+    <p>
+      We are currently developing a unified dashboard that brings together financial tracking, event planning, and communication into a single workspace. The next phase will focus on optional premium features such as audit trails and advanced reporting — with the goal of making the platform sustainable while keeping the base product free for grassroots charities.
+    </p>
   </section>
   
