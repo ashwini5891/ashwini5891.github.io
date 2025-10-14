@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Platform for Charity Groups</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Designing a platform for charity groups to simplify finances and events." />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#121212;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+      --accent:#111827;
+      --maxw: 880px;
+      --rhythm: 16px;
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height:1.6}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:calc(var(--rhythm)*2) var(--rhythm);}
+    header.case-hero{padding:calc(var(--rhythm)*4) var(--rhythm) calc(var(--rhythm)*3); border-bottom:1px solid var(--border); background:
+      linear-gradient(rgba(0,0,0,.05), rgba(0,0,0,0));
+    }
+    .breadcrumb{font-size:.9rem;color:var(--muted);margin-bottom:8px}
+    .breadcrumb a{color:inherit;text-decoration:none}
+    .breadcrumb a:hover{text-decoration:underline}
+    h1{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:0 0 8px}
+    .subtitle{font-size:1.05rem;color:var(--muted);max-width:60ch}
+    section{padding:calc(var(--rhythm)*2) 0;border-bottom:1px solid var(--border)}
+    section:last-of-type{border-bottom:0}
+    h2{font-size:clamp(20px,2.6vw,28px);margin:0 0 10px}
+    p{margin:8px 0 12px}
+    ul{margin:8px 0 12px 20px}
+    li+li{margin-top:6px}
+    .quote{padding:14px 16px;border-left:3px solid var(--accent);background:#f9fafb;border-radius:6px;margin:14px 0;color:#111827}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:20px}
+    @media (min-width: 900px){ .grid-2{grid-template-columns: 1.2fr .8fr} }
+    .muted{color:var(--muted)}
+    .metric-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:10px}
+    .metric{border:1px solid var(--border);border-radius:10px;padding:12px}
+    .tag{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:999px;font-size:.85rem;color:var(--muted);margin-right:6px}
+    .image-frame{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
+    .image-frame img{display:block;width:100%;height:auto}
+    .small{font-size:.95rem}
+    .footnote{font-size:.9rem;color:var(--muted);margin-top:8px}
+    .top-space{margin-top:8px}
+  </style>
+</head>
+<body>
+
+  <header class="case-hero">
+    <div class="wrap">
+      <nav class="breadcrumb">
+        <a href="/index.html" aria-label="Back to portfolio">Portfolio</a> / Case Study
+      </nav>
+      <h1>Building a Platform for Charity Groups</h1>
+      <p class="subtitle">Helping charity teams simplify finances and focus on impact</p>
+    </div>
+  </header>
+
+  <main class="wrap" id="case-study">
+
+    <section aria-labelledby="problem-space">
+      <h2 id="problem-space">Problem space</h2>
+      <div class="grid-2">
+        <div>
+          <p>Across the UK, there are more than <strong>12,000 charity groups</strong> with teams of <strong>2 to 10 people</strong>. These groups are the backbone of local life, improving playgrounds, running fundraising fairs, or protecting community green spaces such as <em>Friends of Highgate Woods</em> in London.</p>
+          <p>Operations are fragmented:</p>
+          <ul>
+            <li><strong>Finances</strong> live in spreadsheets</li>
+            <li><strong>Project management</strong> happens in shared documents</li>
+            <li><strong>Communication</strong> runs through WhatsApp threads</li>
+          </ul>
+          <p>Most members are volunteers balancing day jobs and family commitments. Many groups handle <strong>£5,000 to £15,000</strong> in annual turnover, with a significant portion lost to <strong>platform fees</strong> during fundraising.</p>
+          <p>General tools like QuickBooks or Asana feel too broad. Niche tools such as Classlist do not cover the full workflow end to end. These charities are the unsung heroes of the community, and they deserve better tools, not corporate complexity.</p>
+        </div>
+        <aside>
+          <div class="metric-list">
+            <div class="metric">
+              <div class="tag">Team size</div>
+              <p class="small"><strong>2 to 10 members</strong></p>
+            </div>
+            <div class="metric">
+              <div class="tag">Turnover</div>
+              <p class="small"><strong>£5,000 to £15,000</strong> per year</p>
+            </div>
+            <div class="metric">
+              <div class="tag">Pain</div>
+              <p class="small">High admin effort and platform fees</p>
+            </div>
+          </div>
+          <p class="footnote">Examples include PTAs, Friends of parks charities, and local environmental groups.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section aria-labelledby="opportunity">
+      <h2 id="opportunity">Product opportunity</h2>
+      <p>The vision was a unified platform that simplifies financial management, event coordination, and administrative tasks for charity groups.</p>
+      <div class="quote">
+        <strong>The goal:</strong> Reduce financial upkeep, automate manual reporting, and help charity teams spend more time fundraising and less time balancing spreadsheets.
+      </div>
+      <p>If we save <strong>five hours per month</strong> for each group, that equates to more than <strong>700,000 volunteer hours</strong> freed annually across the UK.</p>
+    </section>
+
+    <section aria-labelledby="started">
+      <h2 id="started">How it started</h2>
+      <ul>
+        <li>Create and manage fundraising events</li>
+        <li>Record income and expenses</li>
+        <li>Track spending against event budgets</li>
+      </ul>
+      <p>We shipped a clean financial dashboard that summarised cash flow by month and event.</p>
+      <figure class="image-frame top-space">
+        <!-- Replace the src with your image path -->
+        <img src="/images/case-dashboard-placeholder.jpg" alt="Dashboard mockup showing event based cash flow and monthly summaries" />
+        <figcaption class="footnote">Illustrative dashboard mockup</figcaption>
+      </figure>
+      <p class="top-space">After launch, there was silence. No sign ups. No activity. The product existed, but distribution and validated demand did not.</p>
+    </section>
+
+    <section aria-labelledby="challenges">
+      <h2 id="challenges">Challenges</h2>
+      <h3>1. Distribution</h3>
+      <p>We fell into the classic build it and they will come trap. Charity groups were hard to reach at the point of need.</p>
+      <h3>2. Access to users</h3>
+      <p>Cold outreach underperformed. In Facebook and WhatsApp groups, organisers were polite but reluctant to trial new software.</p>
+      <h3>3. Cost to serve</h3>
+      <p>Infrastructure costs were disproportionate to small charity budgets. Even modest subscriptions felt heavy.</p>
+      <h3>4. Data migration</h3>
+      <p>Years of spreadsheet history made switching feel costly. The perceived effort outweighed the value.</p>
+    </section>
+
+    <section aria-labelledby="pivot">
+      <h2 id="pivot">The pivot</h2>
+      <p>We started again, smaller and closer to users. We removed cost and noise by shutting down the full SaaS, the landing pages, and paid ads. We embedded in niche charity networks, focused on trust, and listened. In parallel, we mapped the end to end journey to find a beachhead problem.</p>
+    </section>
+
+    <section aria-labelledby="insights">
+      <h2 id="insights">Insights</h2>
+      <div class="metric-list">
+        <div class="metric"><strong>Finances</strong><br/><span class="muted">Tracking funds and platform fees</span><br/>Weight: <strong>70 percent</strong></div>
+        <div class="metric"><strong>Event management</strong><br/><span class="muted">Calendars and volunteers</span><br/>Weight: <strong>20 percent</strong></div>
+        <div class="metric"><strong>Gift Aid</strong><br/><span class="muted">Confusing paperwork</span><br/>Weight: <strong>10 percent</strong></div>
+      </div>
+      <p class="footnote">Weights reflect relative frequency and intensity of complaints during discovery.</p>
+    </section>
+
+    <section aria-labelledby="mvps">
+      <h2 id="mvps">MVPs</h2>
+
+      <h3>1. Finance tracker</h3>
+      <p>A lightweight web prototype for CSV uploads from banks or payment processors. It reconciled transactions and categorised income and expenses by event and month for instant visibility.</p>
+      <p class="muted small">Result: In the first month, <strong>27 charity groups</strong> used it regularly and reported fewer spreadsheet hours per event cycle.</p>
+
+      <h3>2. Event calendar</h3>
+      <p>A Notion template that combined a calendar, reminders, and task tracking. Shared in charity spaces and passed along by organisers.</p>
+      <p class="muted small">Adoption: <strong>about 140 downloads</strong> in the first few weeks through word of mouth.</p>
+
+      <h3>3. Gift Aid handling</h3>
+      <p>Deprioritised due to adequate free tools in the market. Focus remained on financial workflows where pain and opportunity were highest.</p>
+    </section>
+
+    <section aria-labelledby="community">
+      <h2 id="community">Building a community</h2>
+      <p>We went door to door to meet charity teams, asked what they needed, and observed how they ran activities. We built relationships first, features second.</p>
+      <p>In parallel, we shared useful content such as fundraising tips, reporting templates, and policy updates. No product push, only practical help.</p>
+      <ul>
+        <li><strong>400 percent increase</strong> in engagement across posts</li>
+        <li><strong>Three times more inbound conversations</strong> about finance problems</li>
+        <li>Dozens of new users for the finance MVP through referrals</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="status">
+      <h2 id="status">Where things stand</h2>
+      <ul>
+        <li><strong>Zero ad spend</strong> with steady organic adoption</li>
+        <li><strong>Retention above 70 percent</strong> among MVP testers</li>
+        <li>Active feedback loop guiding automation and reporting</li>
+      </ul>
+      <p>The work suggests demand for a sector specific finance tool written in the language of charities, not accountants.</p>
+    </section>
+
+    <section aria-labelledby="next">
+      <h2 id="next">What is next</h2>
+      <ul>
+        <li>Automated reconciliation via open banking connections</li>
+        <li>Integrated fundraising with lower platform fees</li>
+        <li>Simple dashboards for spending, donations, and upcoming events</li>
+      </ul>
+      <p>Long term, the aim is an operating system for charities that saves time, reduces cost, and lets them focus on impact.</p>
+    </section>
+
+    <section aria-labelledby="credits">
+      <h2 id="credits">Notes</h2>
+      <p class="small muted">This concept case study focuses on methods and outcomes rather than brand naming. Figures are directional and will be updated as validation continues.</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
