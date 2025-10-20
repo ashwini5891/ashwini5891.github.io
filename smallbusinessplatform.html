@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Small Business Platform - Ashwini Laxminarayana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Building an Integrated Platform for Small Business Teams">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-fixed bg-cover bg-center text-slate-900 antialiased min-h-screen"
+      style="background-image: url('/assets/images/background.jpg');">
+
+  <!-- Overlay for readability -->
+  <div class="fixed inset-0 bg-white/30 -z-10"></div>
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/index.html" class="font-semibold text-lg hover:text-slate-600 transition">← Back</a>
+      <div class="flex gap-8 text-sm">
+        <a href="/index.html#about" class="hover:text-slate-600 transition">About</a>
+        <a href="/index.html#projects" class="hover:text-slate-600 transition">Projects</a>
+        <a href="/index.html#contact" class="hover:text-slate-600 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Building an Integrated Platform for Small Business Teams</h1>
+      <p class="text-lg text-slate-600">Duration: June 2024 – October 2025 | Status: Active MVP with engaged user base</p>
+    </div>
+  </section>
+
+  <!-- Featured Image -->
+  <div class="max-w-4xl mx-auto px-6 mb-8">
+    <img src="/assets/images/business-platform.jpg" alt="Small Business Platform Dashboard" 
+         class="w-full h-auto rounded-2xl shadow-xl border border-white/60">
+  </div>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 pb-16">
+    
+    <!-- Content Section -->
+    <article class="bg-white/80 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg border border-white/60 space-y-8">
+      
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Problem Space</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>Across the UK, over 150,000 small businesses operate with teams of 2–10 people. These teams, from local community organisations and charity groups to creative agencies and consultancies, face highly fragmented administrative workflows.</p>
+          
+          <p>Finances are managed in spreadsheets, project plans sit in Google Docs, and communication happens in WhatsApp groups. Despite their impact, these businesses often work with modest annual turnovers (£5k–£50k), meaning platform subscription fees and transaction costs quickly erode their already-thin margins.</p>
+          
+          <p>While tools like QuickBooks, Asana, or Trello exist, they are broad and enterprise-focused, failing to address the distinct needs of micro-teams. The opportunity was clear: design a lightweight, integrated platform to help teams of 2–10 members reduce administrative overhead and spend more time on delivery and growth.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Product Opportunity</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>The vision was to simplify financial upkeep, event and project management, and reporting through a single accessible platform. By consolidating existing tools into one workspace, small teams could automate reconciliation, plan activities collaboratively, and improve transparency with stakeholders.</p>
+          
+          <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+            <p class="font-semibold mb-2">Target outcomes:</p>
+            <ul class="space-y-1 text-slate-700">
+              <li>• Reduce time spent on financial admin by 40%</li>
+              <li>• Provide real-time visibility of funds across projects and months</li>
+              <li>• Enable secure collaboration amongst team members, advisors, and stakeholders</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Discovery and Beachhead Strategy</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>We began with a clearly defined beachhead segment: small businesses with 2–10 members that run recurring projects or events and manage finances manually.</p>
+          
+          <p>We focused particularly on <strong>charity groups and community organisations</strong>, sectors where event management is central to operations. Examples include local fundraising committees organising seasonal fairs and fun runs, community groups running regular workshops and volunteer days, and environmental charities coordinating clean-up events and tree planting.</p>
+          
+          <p>Through 23 structured interviews with treasurers, coordinators, and operations leads, we mapped their workflows and identified friction points. Using a weighted scoring system, we prioritised opportunities:</p>
+          
+          <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+            <ul class="space-y-2 text-slate-700">
+              <li><strong>Financial management: 70%</strong> – tracking income, expenses, and platform fees</li>
+              <li><strong>Event/project management: 20%</strong> – planning, scheduling, and task coordination</li>
+              <li><strong>Compliance handling: 10%</strong> – already covered by free tools (e.g., HMRC-approved Gift Aid systems). We directed users to existing solutions rather than rebuilding.</li>
+            </ul>
+          </div>
+          
+          <p>These insights directly informed our MVP roadmap, starting with the highest-impact workflows first.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Lightweight MVPs</h2>
+        
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold mb-3">1. Financial Management MVP</h3>
+            <div class="space-y-3 text-slate-700 leading-relaxed">
+              <p>We built a browser-based tool that allows team leads to upload CSV files from bank accounts or payment platforms and automatically reconcile transactions. The system provides a clear view of spending by project, month, or category, without requiring setup, training, or logins.</p>
+              
+              <p>Features include client-side architecture for privacy and zero hosting costs, automated summaries and downloadable reports for stakeholders, and instant deployment.</p>
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-semibold mb-3">2. Event and Project Calendar MVP</h3>
+            <div class="space-y-3 text-slate-700 leading-relaxed">
+              <p>We launched a simple Notion template integrating a shared calendar, meeting scheduler, and key deadlines for funding applications and project milestones. It served as an easy entry point for groups hesitant to adopt new software.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Community Engagement</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>Adoption grew through grassroots engagement rather than paid marketing. We joined online forums, Facebook groups, and small business networks to share resources and templates, building credibility and trust. We also launched social channels curating relevant updates, which steadily increased organic reach and feedback loops.</p>
+          
+          <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+            <p class="font-semibold mb-2">Results:</p>
+            <ul class="space-y-1 text-slate-700">
+              <li>• 87 small businesses actively using at least one MVP feature</li>
+              <li>• 68% 90-day retention amongst early adopters</li>
+              <li>• 40% self-reported reduction in time spent on monthly reconciliation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Building a Distribution Moat</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>Whilst product quality is essential, we recognise that product alone is not a moat. Distribution is. The charity sector demonstrates this clearly: organisations like Parentkind have established strong market positions amongst school-affiliated charities through their extensive user base and brand recognition. However, their platform primarily serves information dissemination rather than addressing the administrative burden these groups face daily.</p>
+          
+          <h3 class="text-xl font-semibold mt-6 mb-3">Distribution Strategy</h3>
+          <p>We are investing in two key channels to build sustained engagement and organic growth:</p>
+          
+          <div class="space-y-4">
+            <div>
+              <p class="font-semibold">Podcast Series</p>
+              <p>We produce regular episodes covering practical guidance for charity operations, financial best practices, and regulatory updates. The format balances educational content with lighthearted discussions about the realities of running grassroots organisations, building both credibility and relatability.</p>
+            </div>
+            
+            <div>
+              <p class="font-semibold">Social Media Presence</p>
+              <p>Our social channels focus on building community rather than promoting features. We share timely updates, celebrate user stories, and curate resources relevant to small business operators and charity coordinators. This approach has generated steady follower growth and high engagement rates.</p>
+            </div>
+          </div>
+          
+          <p>By establishing these distribution channels early, we are creating direct relationships with our user base, reducing reliance on platform intermediaries, and building a sustainable competitive advantage that extends beyond product features alone.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Outcomes</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <ul class="space-y-2">
+            <li>• Validated strong need for lightweight, sector-specific admin tools for teams of 2–10</li>
+            <li>• Built trust through active participation in community networks</li>
+            <li>• Established a foundation for future integration of reporting and compliance modules</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Next Steps</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>We are currently developing a unified dashboard that brings together financial tracking, event/project planning, and communication into a single workspace. The next phase will focus on optional premium features such as audit trails and advanced reporting, with the goal of making the platform sustainable whilst keeping the base product free for grassroots teams.</p>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-600 bg-white/70 backdrop-blur-sm mt-16">
+    © <span id="year">2025</span> Ashwini Laxminarayana
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
