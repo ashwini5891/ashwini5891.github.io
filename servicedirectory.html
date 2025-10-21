@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Social Services Directory - Ashwini Laxminarayana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Building a community-led platform to connect vulnerable people to social services">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-fixed bg-cover bg-center text-slate-900 antialiased min-h-screen"
+      style="background-image: url('/assets/images/background.jpg');">
+
+  <!-- Overlay for readability -->
+  <div class="fixed inset-0 bg-white/30 -z-10"></div>
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/index.html" class="font-semibold text-lg hover:text-slate-600 transition">← Back</a>
+      <div class="flex gap-8 text-sm">
+        <a href="/index.html#about" class="hover:text-slate-600 transition">About</a>
+        <a href="/index.html#projects" class="hover:text-slate-600 transition">Projects</a>
+        <a href="/index.html#contact" class="hover:text-slate-600 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Social Services Discovery Platform</h1>
+      <p class="text-xl text-slate-600">Connecting vulnerable people to social services through community-led discovery</p>
+    </div>
+  </section>
+
+  <!-- Featured Image -->
+  <div class="max-w-4xl mx-auto px-6 mb-8">
+    <img src="/assets/images/service-directory-hero.jpg" alt="Community hands raised" 
+         class="w-full h-auto rounded-2xl shadow-xl border border-white/60">
+  </div>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 pb-16">
+    
+    <!-- Content Section -->
+    <article class="bg-white/80 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg border border-white/60 space-y-8">
+      
+      <section>
+        <h2 class="text-2xl font-bold mb-4">The Challenge</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>A UK-based charity with over 20 years of experience supporting vulnerable communities identified a critical gap: social services exist, but the people who need them most cannot easily find or access them.</p>
+          
+          <p>Existing resources were inadequate. Google Maps listings were incomplete, service websites focused on institutional promotion rather than practical user information, and the most valuable knowledge (direct experiences from people who had actually accessed these services) remained unshared and invisible.</p>
+          
+          <p>The charity's founder recognised the potential of technology to address this disconnect. Inspired by successful hyperlocal discovery platforms like Flush (public facilities) and Park4Night (overnight parking), they envisioned a similar solution for social services. However, whilst they understood the transformative potential of digital tools and AI, they lacked the technical expertise to translate vision into execution.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Discovery and Validation</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>I was engaged to lead product strategy and validate whether this problem warranted a technical solution. We began with comprehensive user research.</p>
+          
+          <p>Working with the charity's volunteer network, we conducted 50 structured interviews with vulnerable individuals across the region. The research confirmed several critical insights:</p>
+          
+          <ul class="space-y-2 ml-6 list-disc">
+            <li>Services were fragmented and difficult to discover through conventional channels</li>
+            <li>People relied on word-of-mouth recommendations, but this knowledge rarely scaled beyond immediate networks</li>
+            <li>Lived experience provided far richer information than official listings (accessibility, staff attitudes, actual wait times, eligibility nuances)</li>
+            <li>Trust was paramount; users needed to know information came from people with similar experiences</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Market Analysis</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>I conducted a competitive landscape assessment across the UK and comparable international markets:</p>
+          
+          <p><strong>UK:</strong> No equivalent service existed. Existing directories were either government-run databases (difficult to navigate, outdated) or charity-specific portals (siloed by organisation rather than user need).</p>
+          
+          <p><strong>International comparators:</strong></p>
+          <ul class="space-y-2 ml-6">
+            <li><strong>United States:</strong> <a href="https://www.1degree.org/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">1degree</a> provided a model for verified, community-contributed service information</li>
+            <li><strong>Australia:</strong> <a href="https://askizzy.org.au/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">AskIzzy</a> demonstrated the viability of mobile-first service discovery for people experiencing homelessness</li>
+          </ul>
+          
+          <p>The analysis revealed a clear opportunity: the UK market lacked a user-centred, community-validated platform for social service discovery.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Strategic Workshops and Vision Setting</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>I facilitated a series of vision-setting and outcome-definition workshops with key stakeholders, including charity leadership, frontline workers, and community advocates. These sessions established:</p>
+          
+          <ul class="space-y-2 ml-6 list-disc">
+            <li><strong>Product vision:</strong> A trusted, community-maintained platform that connects people to the social services they need, when they need them</li>
+            <li><strong>Success metrics:</strong> Measurable improvements in service discovery, reduced time to access support, increased awareness of available resources</li>
+            <li><strong>Roadmap prioritisation:</strong> Phased approach starting with information aggregation, progressing to community contributions and personalised recommendations</li>
+          </ul>
+          
+          <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 mt-4">
+            <p class="font-semibold mb-2">Outputs:</p>
+            <ul class="space-y-1 text-slate-700">
+              <li>• <a href="https://miro.com/app/board/uXjVIi3IqR0=/?share_link_id=95975188451" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Vision and Strategy Board (Miro)</a></li>
+              <li>• <a href="https://www.canva.com/design/DAGr0IYBK8A/ZpE-Z3g8EevSY_O_xBuXuQ/edit?utm_content=DAGr0IYBK8A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Stakeholder Pitch Deck (Canva)</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Prototype and Validation</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>Rather than investing months in full product development, we adopted a lean validation approach:</p>
+          
+          <div>
+            <h3 class="text-xl font-semibold mb-3">Phase 1: Lightweight MVP</h3>
+            <ul class="space-y-2 ml-6 list-disc">
+              <li>Built a functional web prototype displaying existing service information collected by volunteers</li>
+              <li>Map-based interface for location-driven discovery</li>
+              <li>Service profiles with practical details: contact information, opening hours, accessibility features, and eligibility criteria</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-semibold mb-3 mt-6">Phase 2: Field Testing</h3>
+            <ul class="space-y-2 ml-6 list-disc">
+              <li>Volunteers took the prototype directly to vulnerable individuals in the region</li>
+              <li>Collected real-time feedback on:
+                <ul class="ml-6 mt-2 space-y-1">
+                  <li><strong>Service verification:</strong> Does this service still exist? Is the information accurate?</li>
+                  <li><strong>Service quality:</strong> Based on your experience, would you recommend this service?</li>
+                  <li><strong>Coverage gaps:</strong> Are there other services in this area we haven't documented?</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screenshots Section -->
+      <section>
+        <h2 class="text-2xl font-bold mb-6">Platform Features</h2>
+        <div class="space-y-8">
+          <!-- Screenshot 1: Map View with Popup -->
+          <div>
+            <img src="/assets/images/service-directory-map-popup.jpg" alt="Map view with service details popup" 
+                 class="w-full h-auto rounded-lg shadow-lg border border-slate-200 mb-3">
+            <p class="text-sm text-slate-600 italic">Interactive map view showing service locations with detailed information popups</p>
+          </div>
+          
+          <!-- Screenshot 2: Map Overview -->
+          <div>
+            <img src="/assets/images/service-directory-map-overview.jpg" alt="Map overview of all services" 
+                 class="w-full h-auto rounded-lg shadow-lg border border-slate-200 mb-3">
+            <p class="text-sm text-slate-600 italic">Geographical distribution of social services with filtering capabilities</p>
+          </div>
+          
+          <!-- Screenshot 3: Grid View -->
+          <div>
+            <img src="/assets/images/service-directory-grid.jpg" alt="Grid view of services" 
+                 class="w-full h-auto rounded-lg shadow-lg border border-slate-200 mb-3">
+            <p class="text-sm text-slate-600 italic">Grid view displaying service cards with categories, contact details, and opening hours</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Outcomes</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>The validation phase produced tangible results that demonstrated both immediate impact and long-term viability:</p>
+          
+          <div class="space-y-6 mt-6">
+            <div>
+              <h3 class="text-lg font-semibold mb-2">1. Service Discovery and Expansion</h3>
+              <ul class="space-y-1 ml-6 list-disc">
+                <li>Documented 49 previously unmapped social services across the region</li>
+                <li>Identified 23 services that were unknown to the charity despite their 20 years of local presence</li>
+                <li>Discovered 8 informal community support networks operating outside official channels</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold mb-2">2. Direct User Impact</h3>
+              <ul class="space-y-1 ml-6 list-disc">
+                <li>Connected 37 individuals to services addressing immediate needs (housing, mental health support, food assistance)</li>
+                <li>Reduced average time-to-service-access from 3 to 5 days (typical via phone-based referrals) to same-day connections through the platform</li>
+                <li>84% of users reported the platform provided information they could not easily find elsewhere</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold mb-2">3. Data Quality and Trust</h3>
+              <ul class="space-y-1 ml-6 list-disc">
+                <li>Achieved 92% service information accuracy through community validation</li>
+                <li>Corrected 67 instances of outdated information in existing public directories</li>
+                <li>Validated opening hours for all services, identifying 31% had incorrect times listed on Google Maps</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold mb-2">4. Engagement and Adoption</h3>
+              <ul class="space-y-1 ml-6 list-disc">
+                <li>68% of users who accessed the prototype returned to search for additional services within 30 days</li>
+                <li>Volunteers reported the tool significantly improved their ability to make effective referrals</li>
+                <li>Three additional charities in neighbouring regions expressed interest in adopting the platform</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Strategic Implications</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>This project validated a critical market need and demonstrated that technology, when designed with and for vulnerable communities, can meaningfully improve access to essential services. The success of the lightweight prototype provided evidence for further investment in:</p>
+          
+          <ul class="space-y-2 ml-6 list-disc">
+            <li>Scaling the platform across additional UK regions</li>
+            <li>Building community contribution features to crowdsource service reviews and updates</li>
+            <li>Developing mobile-native applications for users without reliable home internet access</li>
+            <li>Integrating AI-powered personalisation to recommend services based on individual circumstances</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Technical Approach</h2>
+        <div class="space-y-4 text-slate-700 leading-relaxed">
+          <p>The prototype was built using modern web technologies prioritising speed, accessibility, and ease of deployment:</p>
+          
+          <ul class="space-y-2 ml-6 list-disc">
+            <li>React-based frontend for responsive, mobile-first interface</li>
+            <li>Leaflet mapping for geographic service discovery</li>
+            <li>Client-side architecture eliminating hosting costs, enabling rapid iteration</li>
+            <li>Fully accessible design meeting WCAG 2.1 AA standards</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pt-8 border-t border-slate-200">
+        <p class="text-sm text-slate-600 italic text-center">
+          This is a closed group project undertaken in partnership with a UK charity. Selected screenshots and additional documentation available upon request, subject to stakeholder approval.
+        </p>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-600 bg-white/70 backdrop-blur-sm mt-16">
+    © <span id="year">2025</span> Ashwini Laxminarayana
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
